@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+    margin: 0;               /* Remove default margin */
+    background-color: #f0f0f0; /* Optional: Background color for the page */
+}
+
+/* Styling the GitHub logo */
+.github-logo {
+    width: 80px;             /* Image size */
+    height: 80px;            /* Image size */
+    border-radius: 50%;      /* Makes the image circular */
+    object-fit: cover;       /* Ensures the image keeps its aspect ratio */
+    cursor: pointer;        /* Pointer cursor to indicate it's clickable */
+}

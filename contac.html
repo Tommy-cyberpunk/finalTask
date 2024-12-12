@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="github.css">
+
+ 
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/about%20me.html">About Me</a></li>
+            <li><a href="http://127.0.0.1:5500/my%20classes.html">What I Have Learned</a></li>
+            <li><a href="http://127.0.0.1:5500/myprojects.html">My Projects</a></li>  
+            <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>    
+        </ul>
+    </nav>
+
+    <p>We did it! We can now get out of here and relax. Thank you for everything.</p>
+
+    <!-- GitHub link with image -->
+    <div class="github-container">
+        <a href="https://github.com/your-username" target="_blank">
+            <img src="images/github.png" alt="GitHub Logo" class="github-logo">
+        </a>
+    </div>
+
+    <!-- Hidden audio -->
+    <audio id="myAudio" autoplay style="display: none;">
+        <source src="music/group_yay_cheer-101509 (1).mp3">
+    </audio>
+
+    <script>
+        const images = document.querySelectorAll(".profile-pic");
+        const texts = document.querySelectorAll(".toggleText");
+    
+        images.forEach((image, index) => {
+            const text = texts[index];
+            image.addEventListener('click', function() {
+                if (text.style.display === "none" || text.style.display === "") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            });
+        });
+    </script>
+  
+</body>
+</html>

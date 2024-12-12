@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+<body>
+
+    
+
+
+   
+    <nav class="navbar">
+
+
+        
+        <ul>
+            <nav class="navbar">
+                <ul>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                            <li><a href="http://127.0.0.1:5500/about%20me.html">about me</a></li>
+                            <li><a href="http://127.0.0.1:5500/my%20classes.html"> what I have learned </a></li>
+                            <li><a href="http://127.0.0.1:5500/myprojects.html">My projects</a></li>  
+                            <li><a href="http://127.0.0.1:5500/contat.html">contact</a></li>    
+                    
+                            
+                            
+                        </ul>
+                        
+                    </nav>  
+            
+                    
+                    
+                </ul>
+                
+            </nav>
+        </ul>
+    </nav>
+
+
+
+    </div>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <div class="prompt">
+            <button class="yes-btn" id="yesBtn">yes</button>
+            <button class="no-btn "id="noBtn">no</button>
+        
+        
+        
+            </div>
+        <h1> some things i learned coming into the proggram</h1>
+        
+
+        <div class="profile-container">  <!-- This is the new flex container -->
+            <div class="container">
+                <img id="toggleImage1" src="images/box model.jpeg" alt="photoGraph of me " class="profile-pic">
+                <p class="toggleText"> box model it's just the structe that descrives the surrds of every HTML element </p>
+            </div>
+        
+            <div class="container">
+                <img id="toggleImage3" src="images/css.jpeg" alt="he-just really wanted to be here" class="profile-pic">
+                <p class="toggleText">Cascading Style Sheets it's what gives us style with our page and gives us teh liberty of of controlling out lay out and for jsut about anything </p>
+            </div>
+        
+            <div class="container">
+                <img id="toggleImage2" src="images/js.png" alt="games-i-like " class="profile-pic">
+                <p class="toggleText">probably my biggest battle this is the part of our proggram that gives us the avility to interact with the proggram  </p>
+            </div>
+
+            
+        
+        </div>
+
+    <Script>
+
+window.onload = function() {
+            alert('Welcome to the page! are you having fun?');
+        };
+
+        
+
+
+        const overlay = document.getElementById("overlay");
+         const content= document.getElementById("content");
+         const yesBtn = document.getElementById('yesBtn');
+         const noBtn = document.getElementById('noBtn');
+                   
+         yesBtn.addEventListener("click",()=>{
+             yesBtn.style.display="none";
+             noBtn.style.display="none";
+             alert("nice we can keep going")
+        
+         });
+
+         noBtn.addEventListener("click",()=>{
+            alert(" it's ok i get it we can have a 5 minute break ");
+            window.location.href ="https://www.tiktok.com/en/"
+         });
+    
+    
+        const images = document.querySelectorAll(".profile-pic");
+      const texts = document.querySelectorAll(".toggleText");
+       
+      images.forEach((image, index)=>{
+        const text = texts[index];
+        
+    image.addEventListener('click',function(){
+        if(text.style.display === "none" || text.style.display === "" ){
+            text.style.display = "block";
+
+        }else{
+            text.style.display ="none";
+        }
+    });
+      });
+
+    </script>
+    
+</body>
+</html>

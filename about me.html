@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me page</title>
+    <link rel="stylesheet" href="main.css ">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar">
+        <ul>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/about%20me.html">about me</a></li>
+                    <li><a href="http://127.0.0.1:5500/my%20classes.html"> what I have learned </a></li>
+                    <li><a href="http://127.0.0.1:5500/myprojects.html">My projects</a></li>  
+                    <li><a href="http://127.0.0.1:5500/contac.html">contact</a></li>    
+            
+                    
+                    
+                </ul>
+                
+            </nav>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1> Tomas Rodriguez</h1>
+        <h2>as you guys know Im  Computer programming stundet but here are some thing about me and that i love out side of it</h2>
+
+        <div class="profile-container">  <!-- This is the new flex container -->
+            <div class="container">
+                <img id="toggleImage1" src="images/tom.jpg" alt="photoGraph of me " class="profile-pic">
+                <p class="toggleText">a little about me 19 year old, trying to figure out what Java is and how a module works and i used to skate before i came here</p>
+            </div>
+        
+            <div class="container">
+                <img id="toggleImage3" src="images/kevin.jpg" alt="he-just really wanted to be here" class="profile-pic">
+                <p class="toggleText">he is my friend kevin and he just really wanted to be here :P</p>
+            </div>
+        
+            <div class="container">
+                <img id="toggleImage2" src="images/tomas.jpeg" alt="games-i-like " class="profile-pic">
+                <p class="toggleText">wanted to finish this before the year ends, kinda by the looks of it I won't</p>
+            </div>
+        
+            <div class="container">
+                <img id="toggleImage4" src="images/6abac33f6c8bd5b2337b265597b5da09.jpg" alt="one piece " class="profile-pic">
+                <p class="toggleText">look I love one piece but I swear being a fan is almost a lifestyle</p>
+            </div>
+        </div>
+        
+    <script>
+      const images = document.querySelectorAll(".profile-pic");
+      const texts = document.querySelectorAll(".toggleText");
+       
+      images.forEach((image, index)=>{
+        const text = texts[index];
+        
+    image.addEventListener('click',function(){
+        if(text.style.display === "none" || text.style.display === "" ){
+            text.style.display = "block";
+
+        }else{
+            text.style.display ="none";
+        }
+    });
+      });
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
